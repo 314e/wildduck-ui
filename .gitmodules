@@ -1,0 +1,3 @@
+[submodule "submodules/wildduck-redux"]
+	path = submodules/wildduck-redux
+	url = https://github.com/softwareartistry/wildduck-redux.git

@@ -1,0 +1,58 @@
+{
+	"root": true,
+	"ignorePatterns": ["src/assets/icons/*"],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"commonjs": true,
+		"es6": true
+	},
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": ["eslint-plugin-react", "@typescript-eslint", "react"],
+	"rules": {
+		"no-console": 0,
+		"@typescript-eslint/no-explicit-any": 0,
+		"react/display-name": 0,
+		"@typescript-eslint/interface-name-prefix": 0,
+		"@typescript-eslint/explicit-member-accessibility": 0,
+		"@typescript-eslint/array-type": 0,
+		"@typescript-eslint/no-var-requires": 0,
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"@typescript-eslint/no-unused-vars": 0,
+		"@typescript-eslint/indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"quotes": [
+			"error",
+			"single",
+			{
+				"allowTemplateLiterals": true
+			}
+		],
+		"semi": ["error", "always"],
+		"max-len": [
+			"error",
+			{
+				"code": 120,
+				"tabWidth": 4
+			}
+		]
+	}
+}

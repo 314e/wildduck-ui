@@ -1,0 +1,25 @@
+.filterWrapper .ant-list, .selectCheckBox {
+	padding: 8px;
+}
+
+.filterFooter {
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 7px 8px;
+	overflow: hidden;
+	border-top: 1px solid #e8e8e8;
+}
+
+.filterWrapper .ant-list-item {
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+	border-bottom: 0 !important;
+}
+
+.filterListWrapper {
+	max-height: 190px;
+	overflow-y: scroll;
+}
