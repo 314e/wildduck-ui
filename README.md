@@ -9,7 +9,7 @@
 <h3 align="center">
   <a href="./CONTRIBUTING.md">Contribute</a>
   <span> · </span>
-  <a href="./CODE_OF_CONDUCT.MD">Code of Conduct</a>
+  <a href="./CODE_OF_CONDUCT.md">Code of Conduct</a>
   <span> · </span>
   <a href="./CHANGELOG.md">Change Log</a>
 </h3>
