@@ -103,4 +103,4 @@ Great Feature Requests tend to have:
 
 ## License
 
-By contributing to DogeHouse, you agree that your contributions will be licensed under the [LICENSE file](LICENSE).
+By contributing to WildDuck Ui, you agree that your contributions will be licensed under the [LICENSE file](LICENSE).
