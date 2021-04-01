@@ -25,6 +25,8 @@ npm run project:init
 
 ```
 
+<strong> \* Note Currently project supports node version below or v14.16.0 </strong>
+
 ### Dev Server
 
 `npm run dev`
