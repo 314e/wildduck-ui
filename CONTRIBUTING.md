@@ -26,7 +26,7 @@ follow these steps to ensure your commit messages are standardized:
 1. Make sure your shell path is in the root of the project (not inside any of the packages).
 2. Run `npm i`.
 3. Stage the files you are commiting with `git add [files]`.
-4. Run `npm run commit`. This will start an interactive prompt that generates your commit message:
+4. `git commit -m < you_message >`:
     1. Prefix commit message with `fix:` or `feat:` according to type of commit.
     2. Write a short, imperative tense description of the change.
     3. Provide a issue number if your're creating pull request related the specific issue
