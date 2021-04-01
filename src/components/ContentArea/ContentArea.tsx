@@ -45,7 +45,7 @@ const ContentArea = () => {
 					component: loadableComponent,
 				};
 			});
-		}
+		},
 	);
 	const moduleMap = getModuleMap(menuConfig);
 
@@ -55,7 +55,7 @@ const ContentArea = () => {
 		[<Route key={'/'} exact={true} path={basePath + '/'} component={landingPageMap.component} />],
 		_.map(moduleMap, ({ url, component }) => {
 			return <Route key={url} exact={true} path={basePath + url} component={component} />;
-		})
+		}),
 	);
 	routes.push(<Route key={'notFound'} render={(routerProps) => <ErrorPage error={404} {...routerProps} />} />);
 	return (

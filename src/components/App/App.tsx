@@ -78,6 +78,13 @@ const App: React.FC = () => {
 	 * React-query cache config
 	 */
 	const renderContent = () => {
+		if (_.isEmpty(accessToken) && _.isEmpty(sessionStorage.getItem(apiString))) {
+			return (
+				<Suspense fallback={<Fallback />}>
+					<AccessToken />
+				</Suspense>
+			);
+		}
 		if (error) {
 			return (
 				<Suspense fallback={<p> error </p>}>
@@ -99,16 +106,10 @@ const App: React.FC = () => {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<Layout>
-				<Header />
-				{_.isEmpty(accessToken) && _.isEmpty(sessionStorage.getItem(apiString)) ? (
-					<Suspense fallback={<Fallback />}>
-						<AccessToken />
-					</Suspense>
-				) : (
-					<Router>
-						<Layout>{renderContent()}</Layout>
-					</Router>
-				)}
+				<Router>
+					<Header />
+					<Layout>{renderContent()}</Layout>
+				</Router>
 			</Layout>
 		</QueryClientProvider>
 	);
