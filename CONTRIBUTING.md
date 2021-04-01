@@ -41,7 +41,7 @@ We have two repositories one for React and another for Redux state and API suppo
 
 ## Pull Requests
 
-1. Fork the repo and create your branch (usually named `patch-%the number of PRs you've already made%`) from `staging`.
+1. Fork the repo and create your branch.
 2. If you've added code that should be tested, add some test examples.
 3. Ensure to describe your pull request.
 
