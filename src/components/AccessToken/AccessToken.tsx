@@ -25,7 +25,7 @@ const AccessToken: React.FC = () => {
 		setAccessToken(values.accessToken);
 
 		new AxiosInterceptor().inject({
-			baseURL: sessionStorage.getItem(apiString),
+			baseURL: values.api,
 			headers: { 'Content-Type': 'application/json' },
 		});
 	};
