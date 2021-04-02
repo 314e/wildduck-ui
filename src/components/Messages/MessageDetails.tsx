@@ -82,7 +82,7 @@ const MessageDetails: React.FC = () => {
 							<Descriptions.Item label='Attachments'>
 								{_.map(data.attachments, (attachment, index) => {
 									return (
-										<Row>
+										<Row key={_.get(attachment, 'filename', 'temp') + index}>
 											<Col>
 												<p key={_.get(attachment, 'filename', 'temp') + index}>
 													Filename: {_.get(attachment, 'filename', '')}

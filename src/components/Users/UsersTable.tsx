@@ -1,6 +1,6 @@
 /**
  * @author Aditya Negi <aditya.negi@314ecorp.com>
- * @description Users screen
+ * @description Users Table
  */
 
 import React from 'react';
@@ -61,7 +61,7 @@ const UsersTable: React.FC = () => {
 				columns={columns}
 				dataSource={data}
 				pagination={false}
-				scroll={{ y: 500 }}
+				scroll={{ y: 500, x: 'calc(700px + 50%)' }}
 				loading={isLoading}
 			/>
 		</>
