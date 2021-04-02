@@ -19,9 +19,10 @@ interface IParams {
  * useDownloadAttachment
  */
 const useDownloadAttachment = ({ userId, attachment, mailboxId, messageId }: IParams) => {
-	return useQuery(['useDownloadAttachment', mailboxId, messageId, attachment], async () => {
-		const { contentType, id, filename } = attachment;
-		if (!_.isEmpty(messageId)) {
+	return useQuery(
+		['useDownloadAttachment', mailboxId, messageId, attachment],
+		async () => {
+			const { contentType, id, filename } = attachment;
 			const { data } = await api.messagesApi.getMessageAttachment(userId, mailboxId, messageId, id, {
 				responseType: 'blob',
 			});
@@ -30,8 +31,9 @@ const useDownloadAttachment = ({ userId, attachment, mailboxId, messageId }: IPa
 			link.href = URL.createObjectURL(fileCreated);
 			link.download = filename;
 			link.click();
-		}
-	});
+		},
+		{ enabled: !_.isEmpty(messageId) },
+	);
 };
 
 export default useDownloadAttachment;
