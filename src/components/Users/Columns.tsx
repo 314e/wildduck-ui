@@ -25,6 +25,7 @@ export const getUsersColumns = ({
 			title: 'Username',
 			dataIndex: 'username',
 			filter: true,
+			fixed: 'left',
 			render: (text: string, record: GetUsersResult) => <UserLink id={record.id} name={text} />,
 		},
 		{
@@ -36,6 +37,7 @@ export const getUsersColumns = ({
 			title: 'Address',
 			dataIndex: 'address',
 			filter: true,
+			width: 250,
 		},
 		{
 			title: 'Tags',
@@ -51,6 +53,7 @@ export const getUsersColumns = ({
 		{
 			title: 'Quota Used',
 			dataIndex: 'quotaUsed',
+			width: 220,
 			render: (text: string, record: GetUsersResult) => {
 				const fraction = (record.quota.used / record.quota.allowed) * 100;
 
@@ -86,9 +89,9 @@ export const getUsersColumns = ({
 			title: 'Actions',
 			key: 'action',
 			fixed: 'right' as const,
-			width: 200,
+			width: 180,
 			render: (text: string, record: GetUsersResult) => (
-				<Space size={'middle'}>
+				<>
 					<ManageActions user={record} />
 					<Tooltip title={'Delete User'}>
 						<Button
@@ -101,7 +104,7 @@ export const getUsersColumns = ({
 							Delete
 						</Button>
 					</Tooltip>
-				</Space>
+				</>
 			),
 		},
 	];
