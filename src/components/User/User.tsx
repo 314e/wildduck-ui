@@ -118,7 +118,7 @@ const User: React.FC = () => {
 					}
 					type='primary'
 				>
-					Delete
+					Delete User
 				</Button>,
 			]}
 		>
