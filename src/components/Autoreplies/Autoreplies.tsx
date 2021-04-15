@@ -16,9 +16,6 @@ import AutorepliesForm from './AutorepliesForm';
 import useDeleteAutoreply from 'app-ui/hooks/useDeleteAutoreply';
 import useAutoreplyDetails from 'app-ui/hooks/useAutoreplyDetails';
 
-import 'braft-editor/dist/index.css';
-import 'styles/style.css';
-
 /**
  * Autoreplies Component
  */

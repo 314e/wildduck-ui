@@ -7,7 +7,7 @@ import React from 'react';
 import { Button, Form, Input, Switch, Space, Select, Row, Col } from 'antd';
 import _ from 'lodash';
 
-import { tailLayout } from 'app-ui/components/FormLayout';
+import { tailLayout, layout } from 'app-ui/components/FormLayout';
 import { userTooltip } from 'app-ui/lib/constants/constant';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 
@@ -64,6 +64,8 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 		<Form
 			form={form}
 			name='basic'
+			labelCol={{ span: 12 }}
+			wrapperCol={{ span: 12 }}
 			initialValues={{
 				remember: true,
 				...data,
@@ -86,7 +88,7 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 			onFinish={onFinish}
 		>
 			<Row style={{ paddingTop: 20 }}>
-				<Col span={8} offset={1}>
+				<Col span={10}>
 					<Form.Item label='Name' name='name' tooltip={userTooltip.name}>
 						<Input />
 					</Form.Item>
@@ -193,7 +195,7 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 						<Input type={'number'} />
 					</Form.Item>
 				</Col>
-				<Col span={8} offset={3}>
+				<Col span={10} offset={1}>
 					<Form.Item label='Current Forwards / Day' name='forwards' tooltip={userTooltip.forwards}>
 						<Input type={'number'} />
 					</Form.Item>
@@ -250,7 +252,7 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 					<Form.Item label='Suspend' name='suspended' tooltip={userTooltip.suspended} valuePropName='checked'>
 						<Switch />
 					</Form.Item>
-					<Form.Item {...tailLayout} style={{ paddingTop: 10 }}>
+					<Form.Item wrapperCol={{ offset: 8, span: 12 }} style={{ paddingTop: 10 }}>
 						<Space size='middle'>
 							<Button type='primary' htmlType='submit'>
 								Save
