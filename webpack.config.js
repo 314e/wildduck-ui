@@ -1,21 +1,13 @@
 const path = require('path');
+const webpack = require('webpack');
+const { merge } = require('webpack-merge');
+
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
-const { merge } = require('webpack-merge');
-const BabelMultiTargetPlugin = require('webpack-babel-multi-target-plugin').BabelMultiTargetPlugin;
 
 const modeConfig = (mode) => require(`./buildUtils/webpack.${mode}`);
-
-const getCopyWebpackPlugins = (files) =>
-	new CopyWebpackPlugin(
-		files.map((file) => ({
-			from: path.join(__dirname, `public/${file}`),
-			to: path.join(__dirname, `dist/${file}`),
-		}))
-	);
 
 const getIncludeDirs = () => [path.join(__dirname, 'src'), path.join(__dirname, 'submodules/wildduck-redux/src')];
 
@@ -25,7 +17,12 @@ const getPlugins = (analyse) => {
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
 		}),
-		getCopyWebpackPlugins(['favicon', 'svg', 'style.css', 'index.html', 'manifest.json', 'robots.txt']),
+		new CopyWebpackPlugin({
+			patterns: ['favicon', 'svg', 'style.css', 'manifest.json', 'robots.txt'].map((file) => ({
+				from: path.join(__dirname, `public/${file}`),
+				to: path.join(__dirname, `dist/${file}`),
+			})),
+		}),
 		// ___ANTD___ specific
 		new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /es-us/),
 	];
@@ -35,7 +32,12 @@ const getPlugins = (analyse) => {
 	return plugins;
 };
 
-module.exports = ({ mode, analyse } = { mode: 'production', analyse: false }) => {
+module.exports = (props) => {
+	let mode = 'production';
+	if (props?.development) {
+		mode = 'development';
+	}
+
 	return merge(
 		{
 			entry: path.join(__dirname, 'src/components/index.tsx'),
@@ -57,7 +59,7 @@ module.exports = ({ mode, analyse } = { mode: 'production', analyse: false }) =>
 					},
 				],
 			},
-			plugins: getPlugins(analyse),
+			plugins: getPlugins(props.analyze),
 			resolve: {
 				alias: {
 					'app-ui': path.resolve(__dirname, 'src'),
@@ -80,22 +82,9 @@ module.exports = ({ mode, analyse } = { mode: 'production', analyse: false }) =>
 					store: path.resolve(__dirname, 'submodules/wildduck-redux/src/store'),
 				},
 				extensions: ['.tsx', '.ts', '.js', '.json'],
-				mainFields: [
-					// these are generally shipped as a higher ES language level than `module`
-					'es2015',
-					// current leading de-facto standard - see https://github.com/rollup/rollup/wiki/pkg.module
-					'module',
-					'main',
-				],
-			},
-			node: {
-				console: true,
-				fs: 'empty',
-				net: 'empty',
-				tls: 'empty',
 			},
 			target: 'web',
 		},
-		modeConfig(mode)
+		modeConfig(mode),
 	);
 };
