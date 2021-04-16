@@ -1,22 +1,26 @@
 /**
  * @author Aditya Negi <aditya.negi@314ecorp.com>
- * @description filters logic
+ * @description add/update filter form
  */
 
 import React, { useEffect } from 'react';
-import Form from 'antd/lib/form';
-import Modal from 'antd/lib/modal';
-import { tailLayout } from '../FormLayout';
 import _ from 'lodash';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { Input, Switch, Select, Button, Space, Breadcrumb } from 'antd';
 import { useActions, useValues } from 'kea';
+import { useParams } from 'react-router-dom';
+
+import { ExclamationCircleOutlined } from '@ant-design/icons';
+import Form from 'antd/lib/form';
+import Modal from 'antd/lib/modal';
+
+import { tailLayout } from '../FormLayout';
+import { Page } from '../Page/Page';
+
 import filtersLogic from 'app-redux/logic/filtersLogic';
 import { filtersTooltip } from 'app-ui/lib/constants/constant';
-import { CreateFilterRequest, UpdateFilterRequest } from 'app-redux/client/wildduck-api';
-import { Page } from '../Page/Page';
+import { CreateFilterRequest } from 'app-redux/client/wildduck-api';
+
 import useFilterDetails from 'app-ui/hooks/useFIlterDetails';
-import { useParams } from 'react-router-dom';
 import useCreateFilter from 'app-ui/hooks/useCreateFilter';
 import useUpdateFilter from 'app-ui/hooks/useUpdateFilter';
 import useMailboxes from 'app-ui/hooks/useMailboxes';
@@ -81,7 +85,7 @@ const AddFiltersForm: React.FC<Props> = (props: Props) => {
 					Filters
 				</a>
 			</Breadcrumb.Item>
-			<Breadcrumb.Item>Add Filter</Breadcrumb.Item>
+			<Breadcrumb.Item>{props.action === 'create' ? 'Add Filter' : 'Update Filter'}</Breadcrumb.Item>
 		</Breadcrumb>
 	);
 
@@ -149,7 +153,7 @@ const AddFiltersForm: React.FC<Props> = (props: Props) => {
 							Reset
 						</Button>
 						<Button type='primary' htmlType='submit'>
-							Create
+							Save
 						</Button>
 					</Space>
 				</Form.Item>

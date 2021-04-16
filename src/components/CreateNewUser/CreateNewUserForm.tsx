@@ -8,10 +8,9 @@ import { Form, Button, Input, Switch, Space, Select, Col, Row } from 'antd';
 import _ from 'lodash';
 import { useHistory } from 'react-router-dom';
 
-import { tailLayout } from '../FormLayout';
 import { userTooltip } from 'app-ui/lib/constants/constant';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import {getBasePath} from 'app-ui/components/CustomLink';
+import { getBasePath } from 'app-ui/components/CustomLink';
 import useCreateUser from 'app-ui/hooks/useCreateUser';
 
 const { Option } = Select;
@@ -65,6 +64,8 @@ const CreateNewUserForm: React.FC = () => {
 		<Form
 			form={form}
 			name='basic'
+			labelCol={{ span: 12 }}
+			wrapperCol={{ span: 12 }}
 			initialValues={{
 				remember: true,
 				emptyAddress: false,
@@ -84,7 +85,7 @@ const CreateNewUserForm: React.FC = () => {
 			onFinish={onFinish}
 		>
 			<Row style={{ paddingTop: 20 }}>
-				<Col span={8} offset={1}>
+				<Col span={10}>
 					<Form.Item
 						label='Username'
 						name='username'
@@ -136,20 +137,36 @@ const CreateNewUserForm: React.FC = () => {
 					>
 						<Input.Password minLength={6} />
 					</Form.Item>
-					<Form.Item label='Empty Address' name='emptyAddress' tooltip={userTooltip.emptyAddress}>
+					<Form.Item
+						label='Empty Address'
+						name='emptyAddress'
+						tooltip={userTooltip.emptyAddress}
+						valuePropName='checked'
+					>
 						<Switch />
 					</Form.Item>
-					<Form.Item label='Hashed Password' name='hashedPassword' tooltip={userTooltip.hashedPassword}>
+					<Form.Item
+						label='Hashed Password'
+						name='hashedPassword'
+						tooltip={userTooltip.hashedPassword}
+						valuePropName='checked'
+					>
 						<Switch />
 					</Form.Item>
 					<Form.Item
 						label='Required Password Change'
 						name='requirePasswordChange'
 						tooltip={userTooltip.requirePasswordChange}
+						valuePropName='checked'
 					>
 						<Switch />
 					</Form.Item>
-					<Form.Item label='Allow Unsafe' name='allowUnsafe' tooltip={userTooltip.allowUnsafe}>
+					<Form.Item
+						label='Allow Unsafe'
+						name='allowUnsafe'
+						tooltip={userTooltip.allowUnsafe}
+						valuePropName='checked'
+					>
 						<Switch />
 					</Form.Item>
 					<Form.Item label='Tags' name='tags' tooltip={userTooltip.tags}>
@@ -159,6 +176,7 @@ const CreateNewUserForm: React.FC = () => {
 						label='Add Tags to Address'
 						name='addTagsToAddress'
 						tooltip={userTooltip.addTagsToAddress}
+						valuePropName='checked'
 					>
 						<Switch />
 					</Form.Item>
@@ -169,16 +187,27 @@ const CreateNewUserForm: React.FC = () => {
 						label='Upload sent messages'
 						name='uploadSentMessages'
 						tooltip={userTooltip.uploadSentMessages}
+						valuePropName='checked'
 					>
 						<Switch />
 					</Form.Item>
 					<Form.Item label='Public PGP Key' name='pubKey' tooltip={userTooltip.pubKey}>
 						<Input />
 					</Form.Item>
-					<Form.Item label='Encrypt Messages' name='encryptMessages' tooltip={userTooltip.encryptMessages}>
+					<Form.Item
+						label='Encrypt Messages'
+						name='encryptMessages'
+						tooltip={userTooltip.encryptMessages}
+						valuePropName='checked'
+					>
 						<Switch />
 					</Form.Item>
-					<Form.Item label='Encrypt Forwarded' name='encryptForwarded' tooltip={userTooltip.encryptForwarded}>
+					<Form.Item
+						label='Encrypt Forwarded'
+						name='encryptForwarded'
+						tooltip={userTooltip.encryptForwarded}
+						valuePropName='checked'
+					>
 						<Switch />
 					</Form.Item>
 					<Form.Item label='Meta Data' name='metaData' tooltip={userTooltip.metaData}>
@@ -226,7 +255,7 @@ const CreateNewUserForm: React.FC = () => {
 						<Input type={'number'} />
 					</Form.Item>
 				</Col>
-				<Col span={8} offset={3}>
+				<Col span={10} offset={1}>
 					<Form.Item label='Quota' name='quota' tooltip={userTooltip.quota}>
 						<Input type={'number'} />
 					</Form.Item>
@@ -294,7 +323,7 @@ const CreateNewUserForm: React.FC = () => {
 					<Form.Item label='Whitelist' name='fromWhitelist' tooltip={userTooltip.fromWhitelist}>
 						<Select mode='tags' style={{ width: '100%' }} placeholder='Enter addresses to whitelist' />
 					</Form.Item>
-					<Form.Item {...tailLayout}>
+					<Form.Item wrapperCol={{ offset: 8, span: 12 }}>
 						<Space size='middle'>
 							<Button type='default' htmlType='button' onClick={handleReset}>
 								Reset
