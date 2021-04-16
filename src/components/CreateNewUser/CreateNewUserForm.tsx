@@ -84,6 +84,20 @@ const CreateNewUserForm: React.FC = () => {
 			}}
 			onFinish={onFinish}
 		>
+			<Row>
+				<Col offset={20}>
+					<Form.Item>
+						<Space size='middle'>
+							<Button type='primary' htmlType='submit'>
+								Create
+							</Button>
+							<Button type='default' htmlType='button' onClick={handleReset}>
+								Reset
+							</Button>
+						</Space>
+					</Form.Item>
+				</Col>
+			</Row>
 			<Row style={{ paddingTop: 20 }}>
 				<Col span={10}>
 					<Form.Item
@@ -248,14 +262,14 @@ const CreateNewUserForm: React.FC = () => {
 							)}
 						</Form.List>
 					</Form.Item>
+				</Col>
+				<Col span={10} offset={1}>
 					<Form.Item label='Targets' name='targets' tooltip={userTooltip.targets}>
 						<Select mode='tags' style={{ width: '100%' }} placeholder='Enter Targets' />
 					</Form.Item>
 					<Form.Item label='Spam Level' name='spamLevel' tooltip={userTooltip.spamLevel}>
 						<Input type={'number'} />
 					</Form.Item>
-				</Col>
-				<Col span={10} offset={1}>
 					<Form.Item label='Quota' name='quota' tooltip={userTooltip.quota}>
 						<Input type={'number'} />
 					</Form.Item>
@@ -322,16 +336,6 @@ const CreateNewUserForm: React.FC = () => {
 					</Form.Item>
 					<Form.Item label='Whitelist' name='fromWhitelist' tooltip={userTooltip.fromWhitelist}>
 						<Select mode='tags' style={{ width: '100%' }} placeholder='Enter addresses to whitelist' />
-					</Form.Item>
-					<Form.Item wrapperCol={{ offset: 8, span: 12 }}>
-						<Space size='middle'>
-							<Button type='default' htmlType='button' onClick={handleReset}>
-								Reset
-							</Button>
-							<Button type='primary' htmlType='submit'>
-								Create
-							</Button>
-						</Space>
 					</Form.Item>
 				</Col>
 			</Row>

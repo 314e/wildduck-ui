@@ -27,6 +27,12 @@
 @card-padding-base: 8px;
 @card-radius: @border-radius-base;
 
+//form item overrriden
+
+.ant-form-item {
+	margin-bottom: 8px;
+}
+
 @form-item-trailing-colon: false;
 
 @shadow: #e8e8e8 0px 2px 4px 0px;
@@ -345,7 +351,7 @@ button:not([disabled]) > .anticon-edit {
 		padding: 12px 8px 8px 8px;
 
 		.ant-row {
-			margin-bottom: 4px !important;
+			margin-bottom: 8px !important; //overridden , default 4px
 
 			.ant-col {
 				padding-bottom: 0 !important;
