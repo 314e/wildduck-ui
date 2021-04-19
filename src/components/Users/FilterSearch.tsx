@@ -33,7 +33,7 @@ const FilterSearch: React.FC = () => {
 			size='small'
 		>
 			<Form.Item name='query'>
-				<Input placeholder='name/address' />
+				<Input placeholder='Name/Address' />
 			</Form.Item>
 			<Form.Item name='tags'>
 				<Input placeholder='Tags' />

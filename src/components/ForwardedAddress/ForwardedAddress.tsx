@@ -26,17 +26,11 @@ const ForwardedAddress: React.FC = () => {
 		setQuery(value);
 	};
 
-	const breadcrum = (
-		<Breadcrumb>
-			<Breadcrumb.Item>Forwarded addresses</Breadcrumb.Item>
-		</Breadcrumb>
-	);
-
 	return !renameDomainToggle ? (
 		<RenameDomain />
 	) : (
 		<Page
-			title={breadcrum}
+			title='Forwarded addresses'
 			error={error}
 			extra={[
 				<Button
