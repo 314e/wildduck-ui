@@ -11,7 +11,7 @@ import MailboxEditForm from './MailboxEditForm';
 import MailboxesTable from './MailboxesTable';
 import MailboxSearch from './MailboxSearch';
 
-import mailboxesLogic from 'logic/mailboxesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
 
 /**
  * Mailboxes Component

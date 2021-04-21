@@ -14,7 +14,7 @@ import showConfirm from 'app-ui/utils/showConfirm';
 
 import useDeleteMessage from 'app-ui/hooks/useDeleteMessage';
 
-import messagesLogic from 'app-redux/logic/messagesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
 
 const MessageActions: React.FC<{ messageDetails: GetMessagesResult }> = ({
 	messageDetails,

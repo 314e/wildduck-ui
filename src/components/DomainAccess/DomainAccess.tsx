@@ -19,7 +19,7 @@ import useDeleteDomain from 'app-ui/hooks/useDeleteDomain';
 import useCreateAllowedDomain from 'app-ui/hooks/useCreateAllowedDomain';
 import useCreateBlockedDomain from 'app-ui/hooks/useCreateBlockedDomain';
 
-import domainAccessLogic from 'logic/domainAccessLogic';
+import domainAccessLogic from 'app-ui/logic/domainAccessLogic';
 
 /**
  * DomainAccess component

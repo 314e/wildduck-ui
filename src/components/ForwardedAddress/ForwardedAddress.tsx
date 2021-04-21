@@ -13,7 +13,7 @@ import Search from 'antd/lib/input/Search';
 import RenameDomain from './RenameDomain';
 import ForwardedAddressTable from './ForwardedAddressTable';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 /**
  * ForwardedAddress Component

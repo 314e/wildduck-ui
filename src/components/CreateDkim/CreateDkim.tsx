@@ -15,7 +15,7 @@ import Link, { getBasePath } from 'app-ui/components/CustomLink';
 import { dkimTooltip } from '../../lib/constants/constant';
 import { UpdateDkimKeyRequest } from 'app-redux/client/wildduck-api';
 
-import dkimLogic from 'logic/dkimLogic';
+import dkimLogic from 'app-ui/logic/dkimLogic';
 
 import useCreateDkim from 'app-ui/hooks/useCreateDkim';
 

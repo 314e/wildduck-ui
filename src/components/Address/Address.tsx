@@ -10,7 +10,7 @@ import CreateNewAddress from '../CreateNewAddress';
 import AddressTable from './AddressTable';
 import AddressInformation from './AddressInformation';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 /**
  * Address Component

@@ -10,7 +10,7 @@ import { useActions, useValues } from 'kea';
 import Page from '../Page';
 import Link from 'app-ui/components/CustomLink';
 
-import dkimLogic from 'logic/dkimLogic';
+import dkimLogic from 'app-ui/logic/dkimLogic';
 
 /**
  * ResolveId component

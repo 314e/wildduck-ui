@@ -27,9 +27,9 @@ import useDeleteUser from 'app-ui/hooks/useDeleteUser';
 import useResetPassword from 'app-ui/hooks/useResetPassword';
 import useUpdateUserDetails from 'app-ui/hooks/useUpdateUserDetails';
 
-import filtersLogic from 'app-redux/logic/filtersLogic';
-import mailboxesLogic from 'app-redux/logic/mailboxesLogic';
-import addressLogic from 'app-redux/logic/addressLogic';
+import filtersLogic from 'app-ui/logic/filtersLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 const { TabPane } = Tabs;
 

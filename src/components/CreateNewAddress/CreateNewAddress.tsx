@@ -10,7 +10,7 @@ import { useActions } from 'kea';
 import Page from '../Page';
 import CreateNewAddressForm from './CreateNewAddressForm';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 /**
  * CreateNewAddress Component

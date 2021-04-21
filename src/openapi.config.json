@@ -1,0 +1,5 @@
+{
+	"supportsES6": true,
+	"withoutPrefixEnums": true,
+	"withInterfaces": true
+}

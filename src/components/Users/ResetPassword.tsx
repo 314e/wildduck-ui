@@ -7,7 +7,7 @@ import React from 'react';
 import { Modal, Typography } from 'antd';
 import { useActions, useValues } from 'kea';
 
-import usersLogic from 'logic/usersLogic';
+import usersLogic from 'app-ui/logic/usersLogic';
 
 const ResetPassword: React.FC = () => {
 	const { setShowResetPasswordModal, setPassword } = useActions(usersLogic);

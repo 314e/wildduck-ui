@@ -30,12 +30,12 @@
 			"ui-types/*": ["src/types/*"],
 			"actions/*": ["submodules/wildduck-redux/src/actions/*"],
 			"action-types/*": ["submodules/wildduck-redux/src/actiontypes/*"],
-			"redux-types/*": ["submodules/wildduck-redux/src/types/*"],
+			"redux-types/*": ["src/types/*"],
 			"redux-utils/*": ["submodules/wildduck-redux/src/utils/*"],
 			"client/*": ["submodules/wildduck-redux/src/client/*"],
 			"redux-constants/*": ["submodules/wildduck-redux/src/constants/*"],
 			"redux-config/*": ["submodules/wildduck-redux/src/config/*"],
-			"logic/*": ["submodules/wildduck-redux/src/logic/*"],
+			"logic/*": ["src/logic/*"],
 			"store/*": ["submodules/wildduck-redux/src/store/*"]
 		}
 	},

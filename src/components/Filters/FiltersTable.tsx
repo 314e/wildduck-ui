@@ -16,7 +16,7 @@ import FloatingButton from '../FloatingButton';
 import showConfirm from 'app-ui/utils/showConfirm';
 import useFilters from 'app-ui/hooks/useFilters';
 
-import filtersLogic from 'app-redux/logic/filtersLogic';
+import filtersLogic from 'app-ui/logic/filtersLogic';
 
 import useDeleteFilter from 'app-ui/hooks/useDeleteFilter';
 

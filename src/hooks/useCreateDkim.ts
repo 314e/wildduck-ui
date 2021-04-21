@@ -7,7 +7,7 @@ import { useMutation, useQueryClient } from 'react-query';
 import _ from 'lodash';
 
 import api from 'app-redux/client/RequestClient';
-import AppEvents, { Events } from 'app-redux/utils/AppEvents';
+import AppEvents, { Events } from 'app-ui/utils/AppEvents';
 import { UpdateDkimKeyRequest } from 'app-redux/client/wildduck-api';
 
 /*

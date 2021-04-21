@@ -5,7 +5,7 @@
 
 import _ from 'lodash';
 
-import AppEvents, { Events } from 'app-redux/utils/AppEvents';
+import AppEvents, { Events } from 'app-ui/utils/AppEvents';
 
 const handleError = (data: any) => {
 	let error = _.get(data, 'error', '');

@@ -11,7 +11,7 @@ import { getAddressColumns } from './Columns';
 import useAddress from 'app-ui/hooks/useAddress';
 import useDeleteAddress from 'app-ui/hooks/useDeleteAddress';
 
-import addressLogic from 'app-redux/logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 const AddressTable: React.FC = () => {
 	const { setAddressInformationToggle, setCreatNewAddressToggle, setAddressId } = useActions(addressLogic);

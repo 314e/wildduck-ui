@@ -13,7 +13,7 @@ import AddressInformationForm from './AddressInformationForm';
 
 import useAddressInformation from 'app-ui/hooks/useAddressInformation';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 /**
  * AddressInformation Component

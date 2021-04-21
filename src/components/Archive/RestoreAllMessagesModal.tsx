@@ -14,7 +14,7 @@ import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { DATE_TIME_FORMAT } from 'app-ui/utils/constants';
 import useRestoreArchiveMessages from 'app-ui/hooks/useRestoreArchiveMessages';
 
-import archiveLogic from 'app-redux/logic/archiveLogic';
+import archiveLogic from 'app-ui/logic/archiveLogic';
 
 const { Title } = Typography;
 

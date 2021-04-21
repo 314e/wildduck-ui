@@ -4,10 +4,10 @@ import { useValues, useActions } from 'kea';
 import { Layout, Spin, message, notification, Modal } from 'antd';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter as Router } from 'react-router-dom';
-import appLogic from 'logic/appLogic';
+import appLogic from 'app-ui/logic/appLogic';
 import Header from '../Header';
 import RQConfig from './../../react-query.config';
-import AppEvents, { Events } from 'app-redux/utils/AppEvents';
+import AppEvents, { Events } from 'app-ui/utils/AppEvents';
 import { accessTokenString, apiString } from '../../lib/constants/constant';
 
 import 'app-ui/styles/style.css';

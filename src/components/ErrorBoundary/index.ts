@@ -1,6 +1,6 @@
 import { connect } from 'kea';
 import ErrorBoundary from './ErrorBoundary';
-import appLogic from 'app-redux/logic/appLogic';
+import appLogic from 'app-ui/logic/appLogic';
 
 const logic = connect({
 	values: [appLogic, ['error']],

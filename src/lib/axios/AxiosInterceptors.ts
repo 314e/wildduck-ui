@@ -6,7 +6,7 @@
 import log from 'loglevel';
 import _ from 'lodash';
 import AxiosClient from 'client/AxiosClient';
-import AppEvents, { Events } from 'redux-utils/AppEvents';
+import AppEvents, { Events } from 'app-ui/utils/AppEvents';
 import { accessTokenString } from 'app-ui/lib/constants/constant';
 
 /**

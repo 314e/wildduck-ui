@@ -12,8 +12,8 @@ import { Page } from '../Page/Page';
 import MessageSource from './MessageSource';
 import MessageDetails from './MessageDetails';
 
-import messagesLogic from 'app-redux/logic/messagesLogic';
-import mailboxesLogic from 'app-redux/logic/mailboxesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
 
 /**
  * Messages Component

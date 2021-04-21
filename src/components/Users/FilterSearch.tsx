@@ -7,7 +7,7 @@ import React from 'react';
 import { Button, Form, Input } from 'antd';
 import { useActions } from 'kea';
 
-import usersLogic from 'logic/usersLogic';
+import usersLogic from 'app-ui/logic/usersLogic';
 
 /**
  * FilterSearch Component

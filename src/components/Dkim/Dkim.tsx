@@ -11,7 +11,7 @@ import Page from 'components/Page';
 import Link from 'app-ui/components/CustomLink';
 import DkimTable from './DkimTable';
 
-import dkimLogic from 'logic/dkimLogic';
+import dkimLogic from 'app-ui/logic/dkimLogic';
 
 /**
  * Dkim component

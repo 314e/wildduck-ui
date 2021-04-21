@@ -11,8 +11,8 @@ import { useActions, useValues } from 'kea';
 
 import Page from '../Page';
 
-import mailboxesLogic from 'app-redux/logic/mailboxesLogic';
-import messagesLogic from 'app-redux/logic/messagesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
 
 import useMessageSource from 'app-ui/hooks/useMessageSource';
 

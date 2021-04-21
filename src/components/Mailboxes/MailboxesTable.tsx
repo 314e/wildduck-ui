@@ -14,8 +14,8 @@ import useDeleteMessagesInMailbox from 'app-ui/hooks/useDeleteMessagesInMailbox'
 
 import useMailboxes from 'app-ui/hooks/useMailboxes';
 
-import messagesLogic from 'app-redux/logic/messagesLogic';
-import mailboxesLogic from 'logic/mailboxesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
 
 /**
  * MailboxesTable Component

@@ -15,8 +15,8 @@ import { Pagination } from 'app-ui/utils/Pagination';
 
 import useMessages from 'app-ui/hooks/useMessages';
 
-import mailboxesLogic from 'app-redux/logic/mailboxesLogic';
-import messagesLogic from 'app-redux/logic/messagesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
 
 const MailboxMessages: React.FC = () => {
 	const { limit, next, previous, page, unseen } = useValues(messagesLogic);

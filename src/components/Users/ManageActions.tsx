@@ -19,7 +19,7 @@ import useResetPassword from 'app-ui/hooks/useResetPassword';
 import useLogoutUser from 'app-ui/hooks/useLogoutUser';
 import useUpdateUserDetails from 'app-ui/hooks/useUpdateUserDetails';
 
-import usersLogic from 'app-redux/logic/usersLogic';
+import usersLogic from 'app-ui/logic/usersLogic';
 
 interface ManageActionsProps {
 	user: GetUsersResult;

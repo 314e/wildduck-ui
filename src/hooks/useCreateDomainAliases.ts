@@ -6,7 +6,7 @@
 import { useMutation } from 'react-query';
 
 import api from 'app-redux/client/RequestClient';
-import AppEvents, { Events } from 'app-redux/utils/AppEvents';
+import AppEvents, { Events } from 'app-ui/utils/AppEvents';
 import { CreateDomainAliasRequest } from 'app-redux/client/wildduck-api';
 import handleError from 'app-ui/utils/handleError';
 
