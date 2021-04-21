@@ -43,7 +43,7 @@ const AccessToken: React.FC = () => {
 						},
 					]}
 				>
-					<Input placeholder='Enter Access Token' />
+					<Input placeholder='Enter Access Token' autoComplete='off' />
 				</Form.Item>
 				<Form.Item
 					label='API Endpoint'
