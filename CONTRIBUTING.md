@@ -47,7 +47,7 @@ follow these steps to ensure your commit messages are standardized:
 
 ## Quickstart Local Frontend Development
 
--   Run `npm run project:init`
+-   Run `npm run install`
 -   Run `npm run dev`
 -   [http://localhost:3000](http://locahost:3000)
 

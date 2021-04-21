@@ -6,8 +6,6 @@
 	"scripts": {
 		"preinstall": "npm prune",
 		"postinstall": "npm outdated || true",
-		"project:install": "npm install && git submodule foreach npm install",
-		"project:init": "git submodule update --init --recursive && npm run project:install",
 		"webpack-dev-server": "webpack-dev-server",
 		"webpack": "webpack",
 		"openapi-generator": "./node_modules/@openapitools/openapi-generator-cli/main.js generate -g typescript-axios -c openapi.config.json --skip-validate-spec",
