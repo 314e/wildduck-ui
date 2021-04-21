@@ -9,7 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const modeConfig = (mode) => require(`./buildUtils/webpack.${mode}`);
 
-const getIncludeDirs = () => [path.join(__dirname, 'src'), path.join(__dirname, 'submodules/wildduck-redux/src')];
+const getIncludeDirs = () => [path.join(__dirname, 'src')];
 
 const getPlugins = (analyse) => {
 	const plugins = [
@@ -63,22 +63,13 @@ module.exports = (props) => {
 			resolve: {
 				alias: {
 					'app-ui': path.resolve(__dirname, 'src'),
-					'app-redux': path.resolve(__dirname, 'submodules/wildduck-redux/src'),
 					// UI
 					components: path.resolve(__dirname, 'src/components'),
 					lib: path.resolve(__dirname, 'src/lib'),
 					'ui-utils': path.resolve(__dirname, 'src/utils'),
 					styles: path.resolve(__dirname, 'src/styles'),
 					'ui-types': path.resolve(__dirname, 'src/types'),
-					// Redux
-					actions: path.resolve(__dirname, 'submodules/wildduck-redux/src/actions'),
-					'action-types': path.resolve(__dirname, 'submodules/wildduck-redux/src/actiontypes'),
-					'redux-types': path.resolve(__dirname, 'submodules/wildduck-redux/src/types'),
-					'redux-utils': path.resolve(__dirname, 'submodules/wildduck-redux/src/utils'),
 					client: path.resolve(__dirname, 'src/client'),
-					'redux-constants': path.resolve(__dirname, 'submodules/wildduck-redux/src/constants'),
-					'redux-config': path.resolve(__dirname, 'submodules/wildduck-redux/src/config'),
-					logic: path.resolve(__dirname, 'submodules/wildduck-redux/src/logic'),
 					store: path.resolve(__dirname, 'src/store'),
 				},
 				extensions: ['.tsx', '.ts', '.js', '.json'],

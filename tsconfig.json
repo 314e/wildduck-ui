@@ -22,19 +22,13 @@
 		"removeComments": true,
 		"paths": {
 			"app-ui/*": ["src/*"],
-			"app-redux/*": ["submodules/wildduck-redux/src/*"],
 			"components/*": ["src/components/*"],
 			"lib/*": ["src/lib/*"],
 			"ui-utils/*": ["src/utils/*"],
 			"styles/*": ["src/styles/*"],
 			"ui-types/*": ["src/types/*"],
-			"actions/*": ["submodules/wildduck-redux/src/actions/*"],
-			"action-types/*": ["submodules/wildduck-redux/src/actiontypes/*"],
 			"redux-types/*": ["src/types/*"],
-			"redux-utils/*": ["submodules/wildduck-redux/src/utils/*"],
 			"client/*": ["src/client/*"],
-			"redux-constants/*": ["submodules/wildduck-redux/src/constants/*"],
-			"redux-config/*": ["submodules/wildduck-redux/src/config/*"],
 			"logic/*": ["src/logic/*"],
 			"store/*": ["src/store/*"]
 		}

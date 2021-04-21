@@ -31,44 +31,15 @@ follow these steps to ensure your commit messages are standardized:
     2. Write a short, imperative tense description of the change.
     3. Provide a issue number if your're creating pull request related the specific issue
 
-## Project structure
-
-We have two repositories one for React and another for Redux state and API support
-
--   [wildduck-ui](https://github.com/softwareartistry/wildduck-ui): React
--   [wildduck-redux](https://github.com/softwareartistry/wildduck-ui): Redux and API support
--   wilddck-redux is added as a submodule in wildduck-ui repository
-
 ## Pull Requests
 
 1. Fork the repo and create your branch.
 2. If you've added code that should be tested, add some test examples.
 3. Ensure to describe your pull request.
 
-### Creating a branch
-
--   `if there are changes related to redux or api support, create branch in submodule/wildduck-redux and commit these changes before committing main branch`
-
--   `Please keep same branch name in main project as well as in submoules/wildduck-redux`
-
--   `first commit and push changes if there any in submodules/wildduck-redux`
-
--   `don't forget to add and commit submodules/wildduck-redux from main project`
-
--   `if there is no changes related to redux state or api support, no need of creating a branch in submodules/wildduck-redux, creating in main project enough for your changes`
-
-1. submodules/wildduck-redux
+## wildduck-ui
 
 ```shell
-    git add [files]
-    git commit -m 'your commit message'
-    git push <branch_name>
-```
-
-2. wildduck-ui
-
-```shell
-   git add submodules/wildduck-redux
    git add [files]
    git commit -m 'your commit message'
    git push <branch_name>

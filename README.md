@@ -49,14 +49,6 @@ npm run project:init
     accessToken="somesecretvalue"
     ```
 
-### Project structure
-
-We are maintaining two git repositories for this project
-
--   [wildduck-ui](https://github.com/softwareartistry/wildduck-ui): Main project which contains react components
--   [wildduck-redux](https://github.com/softwareartistry/wildduck-redux): Redux state and API to support wildduck IMAP
-    server
-
 ### Tech Stack
 
 -   [React](https://reactjs.org/)
@@ -67,30 +59,9 @@ We are maintaining two git repositories for this project
 -   Open Api ( [_@openapitools/openapi-generator-cli_](https://github.com/OpenAPITools/openapi-generator-cli) to
     generate API's from https://docs.wildduck.email/api/openapi.yml)
 
-### Pull Requests / Creating of branch
-
--   `if there are changes related to redux or api support, create branch in submodule/wildduck-redux and commit these changes before committing main branch`
-
--   `Please keep same branch name in main project as well as in submoules/wildduck-redux`
-
--   `first commit and push changes if there any in submodules/wildduck-redux`
-
--   `don't forget to add and commit submodules/wildduck-redux from main project`
-
--   `if there is no changes related to redux state or api support, no need of creating a branch in submodules/wildduck-redux, creating in main project enough for your changes`
-
-submodules/wildduck-redux
-
-```shell
-    git add [files]
-    git commit -m 'your commit message'
-    git push <branch_name>
-```
-
 wildduck-ui
 
 ```shell
-   git add submodules/wildduck-redux
    git add [files]
    git commit -m 'your commit message'
    git push <branch_name>
