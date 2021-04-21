@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Button, Breadcrumb, Col, Row } from 'antd';
+import { Button, Col, Row } from 'antd';
 
 import Link from 'app-ui/components/CustomLink';
 import Page from '../Page';
@@ -15,15 +15,9 @@ import SearchAlias from './SearchAlias';
  * DomainAliases Component
  */
 const DomainAliases: React.FC = () => {
-	const breadcrum = (
-		<Breadcrumb>
-			<Breadcrumb.Item>Domain Alias</Breadcrumb.Item>
-		</Breadcrumb>
-	);
-
 	return (
 		<Page
-			title={breadcrum}
+			title='Domain Alias'
 			extra={[
 				<Button key='domain-aliases-create-new-domain-alias' type='primary'>
 					<Link to='/domain-aliases/create-new-domain-alias'>Create new Domain Alias</Link>

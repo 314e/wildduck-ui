@@ -63,6 +63,7 @@ const UsersTable: React.FC = () => {
 				pagination={false}
 				scroll={{ y: 500, x: 'calc(700px + 50%)' }}
 				loading={isLoading}
+				style={{ marginTop: '10px' }}
 			/>
 		</>
 	);

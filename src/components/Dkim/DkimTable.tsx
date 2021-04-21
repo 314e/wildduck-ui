@@ -60,6 +60,7 @@ const DkimTable: React.FC = () => {
 				columns={columns}
 				dataSource={data}
 				pagination={false}
+				style={{ marginTop: '10px' }}
 			></Table>
 		</>
 	);

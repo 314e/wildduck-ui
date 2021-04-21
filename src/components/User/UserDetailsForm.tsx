@@ -7,7 +7,6 @@ import React from 'react';
 import { Button, Form, Input, Switch, Space, Select, Row, Col } from 'antd';
 import _ from 'lodash';
 
-import { tailLayout, layout } from 'app-ui/components/FormLayout';
 import { userTooltip } from 'app-ui/lib/constants/constant';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 
@@ -87,6 +86,20 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 			}}
 			onFinish={onFinish}
 		>
+			<Row>
+				<Col offset={20}>
+					<Form.Item>
+						<Space size='middle'>
+							<Button type='primary' htmlType='submit'>
+								Save
+							</Button>
+							<Button type='default' htmlType='button' onClick={handleReset}>
+								Reset
+							</Button>
+						</Space>
+					</Form.Item>
+				</Col>
+			</Row>
 			<Row style={{ paddingTop: 20 }}>
 				<Col span={10}>
 					<Form.Item label='Name' name='name' tooltip={userTooltip.name}>
@@ -185,6 +198,8 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 					<Form.Item label='Targets' name='targets' tooltip={userTooltip.targets}>
 						<Select mode='tags' style={{ width: '100%' }} placeholder='Enter  Targets' />
 					</Form.Item>
+				</Col>
+				<Col span={10} offset={1}>
 					<Form.Item label='Spam Level' name='spamLevel' tooltip={userTooltip.spamLevel}>
 						<Input type={'number'} max={100} min={0} />
 					</Form.Item>
@@ -194,8 +209,6 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 					<Form.Item label='Max Recipients / Day' name='recipients' tooltip={userTooltip.recipients}>
 						<Input type={'number'} />
 					</Form.Item>
-				</Col>
-				<Col span={10} offset={1}>
 					<Form.Item label='Current Forwards / Day' name='forwards' tooltip={userTooltip.forwards}>
 						<Input type={'number'} />
 					</Form.Item>
@@ -251,16 +264,6 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 					</Form.Item>
 					<Form.Item label='Suspend' name='suspended' tooltip={userTooltip.suspended} valuePropName='checked'>
 						<Switch />
-					</Form.Item>
-					<Form.Item wrapperCol={{ offset: 8, span: 12 }} style={{ paddingTop: 10 }}>
-						<Space size='middle'>
-							<Button type='primary' htmlType='submit'>
-								Save
-							</Button>
-							<Button type='default' htmlType='button' onClick={handleReset}>
-								Reset
-							</Button>
-						</Space>
 					</Form.Item>
 				</Col>
 			</Row>

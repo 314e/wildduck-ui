@@ -57,7 +57,7 @@ const MessageSource: React.FC = () => {
 	return (
 		<Page title={pageBreadcrumb}>
 			<Card>
-				<BraftEditor language='en' controls={[]} value={BraftEditor.createEditorState(data)} />
+				<BraftEditor language='en' controls={[]} value={BraftEditor.createEditorState(data)} readOnly />
 			</Card>
 		</Page>
 	);

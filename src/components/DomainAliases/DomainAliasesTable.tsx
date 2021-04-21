@@ -69,6 +69,7 @@ const DomainAliasesTable: React.FC = () => {
 				columns={columns}
 				dataSource={data}
 				scroll={{ y: 500 }}
+				style={{ marginTop: '10px' }}
 			/>
 		</>
 	);
