@@ -13,7 +13,7 @@ import { layout, tailLayout } from '../FormLayout';
 import Page from '../Page';
 import Link, { getBasePath } from 'app-ui/components/CustomLink';
 import { dkimTooltip } from '../../lib/constants/constant';
-import { UpdateDkimKeyRequest } from 'app-redux/client/wildduck-api';
+import { UpdateDkimKeyRequest } from 'client/wildduck-api';
 
 import dkimLogic from 'app-ui/logic/dkimLogic';
 

@@ -9,7 +9,7 @@ import _ from 'lodash';
 import { useActions } from 'kea';
 
 import { LogoutOutlined } from '@ant-design/icons';
-import { GetUsersResult } from 'app-redux/client/wildduck-api';
+import { GetUsersResult } from 'client/wildduck-api';
 import useRecalculateQuota from 'app-ui/hooks/useRecalculateQuota';
 import RecalculateQuotaIcon from 'app-ui/assets/icons/RecalculateQuotaIcon';
 import showConfirm from 'app-ui/utils/showConfirm';

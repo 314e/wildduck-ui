@@ -11,7 +11,7 @@ import { EditFilled, DeleteFilled } from '@ant-design/icons';
 import { DATE_TIME_FORMAT_AP } from 'app-ui/utils/constants';
 import showConfirm from 'app-ui/utils/showConfirm';
 import getColumnsWithFilterAndSort from 'app-ui/utils/getColumnsWithFilterAndSort';
-import { GetDkimKeysResult } from 'app-redux/client/wildduck-api';
+import { GetDkimKeysResult } from 'client/wildduck-api';
 import { DkimDetailsLink } from '../Widgets/Link';
 
 export const getDkimColumns: any = ({ dataSource, deleteDkim }: { dataSource: any; deleteDkim(id: string): void }) => {

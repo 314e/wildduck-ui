@@ -32,13 +32,13 @@
 			"action-types/*": ["submodules/wildduck-redux/src/actiontypes/*"],
 			"redux-types/*": ["src/types/*"],
 			"redux-utils/*": ["submodules/wildduck-redux/src/utils/*"],
-			"client/*": ["submodules/wildduck-redux/src/client/*"],
+			"client/*": ["src/client/*"],
 			"redux-constants/*": ["submodules/wildduck-redux/src/constants/*"],
 			"redux-config/*": ["submodules/wildduck-redux/src/config/*"],
 			"logic/*": ["src/logic/*"],
-			"store/*": ["submodules/wildduck-redux/src/store/*"]
+			"store/*": ["src/store/*"]
 		}
 	},
-	"include": ["src", "submodules/wildduck-redux/src"],
+	"include": ["src"],
 	"exclude": ["node_modules"]
 }

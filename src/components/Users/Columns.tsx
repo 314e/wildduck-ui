@@ -11,7 +11,7 @@ import getColumnsWithFilterAndSort from 'app-ui/utils/getColumnsWithFilterAndSor
 import showConfirm from 'app-ui/utils/showConfirm';
 import { UserLink } from '../Widgets/Link';
 import ManageActions from './ManageActions';
-import { GetUsersResult } from 'app-redux/client/wildduck-api';
+import { GetUsersResult } from 'client/wildduck-api';
 
 export const getUsersColumns = ({
 	dataSource,

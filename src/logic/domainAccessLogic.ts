@@ -6,7 +6,7 @@
 import { kea } from 'kea';
 
 import { get } from 'app-ui/utils/logicUtils';
-import { GetAllowedDomainResult } from 'app-redux/client/wildduck-api';
+import { GetAllowedDomainResult } from 'client/wildduck-api';
 
 const domainAccessLogic = kea({
 	path: () => ['domain-access'],

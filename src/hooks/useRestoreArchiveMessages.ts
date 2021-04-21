@@ -5,9 +5,9 @@
 
 import { useMutation, useQueryClient } from 'react-query';
 
-import api from 'app-redux/client/RequestClient';
+import api from 'client/RequestClient';
 import AppEvents, { Events } from 'app-ui/utils/AppEvents';
-import { RestoreMessagesRequest } from 'app-redux/client/wildduck-api';
+import { RestoreMessagesRequest } from 'client/wildduck-api';
 
 interface IParams {
 	userId: string;

@@ -5,7 +5,7 @@
 
 import { useQuery } from 'react-query';
 
-import api from 'app-redux/client/RequestClient';
+import api from 'client/RequestClient';
 
 /**
  * useUserDetails

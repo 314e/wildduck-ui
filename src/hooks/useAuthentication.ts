@@ -6,7 +6,7 @@
 import { useQuery } from 'react-query';
 import _ from 'lodash';
 
-import api from 'app-redux/client/RequestClient';
+import api from 'client/RequestClient';
 import { addKey } from 'app-ui/utils/logicUtils';
 
 /**

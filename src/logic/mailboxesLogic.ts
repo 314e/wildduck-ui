@@ -6,7 +6,7 @@
 import { kea } from 'kea';
 
 import { get } from 'app-ui/utils/logicUtils';
-import { UpdateMailboxRequest } from 'app-redux/client/wildduck-api';
+import { UpdateMailboxRequest } from 'client/wildduck-api';
 
 const mailboxesLogic = kea({
 	path: () => ['mailboxes'],

@@ -8,7 +8,7 @@ import { List } from 'antd';
 import moment from 'moment';
 import { useActions } from 'kea';
 
-import { GetMessagesResult } from 'app-redux/client/wildduck-api';
+import { GetMessagesResult } from 'client/wildduck-api';
 import { DATE_TIME_FORMAT_AP } from 'app-ui/utils/constants';
 import MessageActions from './MessageActions';
 

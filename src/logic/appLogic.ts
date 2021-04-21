@@ -1,7 +1,7 @@
 import { kea } from 'kea';
 import _ from 'lodash';
 import { get } from 'app-ui/utils/logicUtils';
-import menuConfig from '../../submodules/wildduck-redux/src/config/menuConfig';
+import menuConfig from 'app-ui/config/menuConfig';
 
 const appLogic = kea({
 	path: () => ['app'],
