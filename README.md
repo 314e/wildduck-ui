@@ -20,8 +20,8 @@
 git clone git@github.com:softwareartistry/wildduck-ui.git
 
 cd wildduck-ui
-
-npm run project:init
+npm run install
+npm run dev
 
 ```
 
