@@ -20,7 +20,7 @@
 git clone https://github.com/softwareartistry/wildduck-ui.git
 
 cd wildduck-ui
-npm run install
+npm install
 npm run dev
 
 ```
