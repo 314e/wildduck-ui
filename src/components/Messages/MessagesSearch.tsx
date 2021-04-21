@@ -8,7 +8,7 @@ import _ from 'lodash';
 import { Button, Form, Switch } from 'antd';
 import { useActions } from 'kea';
 
-import messagesLogic from 'app-redux/logic/messagesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
 
 /**
  * MessagesSearch Component

@@ -8,7 +8,7 @@ import { useActions, useValues } from 'kea';
 
 import Search from 'antd/lib/input/Search';
 
-import domainAliasesLogic from 'logic/domainAliasesLogic';
+import domainAliasesLogic from 'app-ui/logic/domainAliasesLogic';
 
 /**
  * SearchAlias Component

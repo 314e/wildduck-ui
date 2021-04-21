@@ -18,8 +18,8 @@ import useDownloadAttachment from 'app-ui/hooks/useDownloadAttachment';
 
 import useMessageDetails from 'app-ui/hooks/useMessageDetails';
 
-import messagesLogic from 'app-redux/logic/messagesLogic';
-import mailboxesLogic from 'app-redux/logic/mailboxesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
 
 const MessageDetails: React.FC = () => {
 	const { id }: any = useParams();

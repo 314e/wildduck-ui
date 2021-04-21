@@ -9,7 +9,7 @@ import { useActions } from 'kea';
 import { LogoutOutlined } from '@ant-design/icons';
 import WildDuckIcon from '../../assets/icons/WildDuckIcon';
 import { accessTokenString, apiString } from 'app-ui/lib/constants/constant';
-import appLogic from 'app-redux/logic/appLogic';
+import appLogic from 'app-ui/logic/appLogic';
 
 /**
  * class component for Header

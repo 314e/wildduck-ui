@@ -10,13 +10,13 @@ import { useActions, useValues } from 'kea';
 import { useParams } from 'react-router-dom';
 
 import { EditFilled, DeleteFilled, DiffOutlined } from '@ant-design/icons';
-import { GetFiltersResult } from 'app-redux/client/wildduck-api';
+import { GetFiltersResult } from 'client/wildduck-api';
 import getColumnsWithFilterAndSort from 'app-ui/utils/getColumnsWithFilterAndSort';
 import FloatingButton from '../FloatingButton';
 import showConfirm from 'app-ui/utils/showConfirm';
 import useFilters from 'app-ui/hooks/useFilters';
 
-import filtersLogic from 'app-redux/logic/filtersLogic';
+import filtersLogic from 'app-ui/logic/filtersLogic';
 
 import useDeleteFilter from 'app-ui/hooks/useDeleteFilter';
 

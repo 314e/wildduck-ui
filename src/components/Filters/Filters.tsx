@@ -10,7 +10,7 @@ import { useValues } from 'kea';
 import AddFiltersForm from './AddFiltersForm';
 import FiltersTable from './FiltersTable';
 
-import filtersLogic from 'app-redux/logic/filtersLogic';
+import filtersLogic from 'app-ui/logic/filtersLogic';
 
 const Filters: React.FC = () => {
 	const { showAddFilterForm, filterId } = useValues(filtersLogic);

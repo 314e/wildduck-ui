@@ -10,7 +10,7 @@ import moment from 'moment';
 
 import getColumnsWithFilterAndSort from 'app-ui/utils/getColumnsWithFilterAndSort';
 import showConfirm from 'app-ui/utils/showConfirm';
-import { GetUserAddressesResult } from 'app-redux/client/wildduck-api';
+import { GetUserAddressesResult } from 'client/wildduck-api';
 import { DATE_TIME_FORMAT } from 'app-ui/utils/constants';
 import { EditFilled, DeleteFilled } from '@ant-design/icons';
 

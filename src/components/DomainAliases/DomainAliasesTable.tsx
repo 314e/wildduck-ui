@@ -11,7 +11,7 @@ import _ from 'lodash';
 import { getDomainAliasesColumns } from './Columns';
 import { Pagination } from 'app-ui/utils/Pagination';
 
-import domainAliasesLogic from 'logic/domainAliasesLogic';
+import domainAliasesLogic from 'app-ui/logic/domainAliasesLogic';
 
 import useDomainAliases from 'app-ui/hooks/useDomainAliases';
 import useDeleteDomainAliases from 'app-ui/hooks/useDeleteDomainAliases';

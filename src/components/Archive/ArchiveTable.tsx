@@ -17,7 +17,7 @@ import { Pagination } from 'app-ui/utils/Pagination';
 
 import useArchive from 'app-ui/hooks/useArchive';
 
-import archiveLogic from 'logic/archiveLogic';
+import archiveLogic from 'app-ui/logic/archiveLogic';
 
 /**
  * ArchiveTable Component

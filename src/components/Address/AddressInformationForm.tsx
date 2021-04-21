@@ -10,7 +10,7 @@ import moment from 'moment';
 import { useParams } from 'react-router-dom';
 
 import { SAddress } from '../../lib/constants/constant';
-import { GetUserAddressResponse } from 'app-redux/client/wildduck-api';
+import { GetUserAddressResponse } from 'client/wildduck-api';
 import { DATE_TIME_FORMAT_AP } from 'app-ui/utils/constants';
 import { updateAddressInfoFormatter } from 'app-ui/lib/constants/Formatter';
 import { layout, tailLayout } from '../FormLayout';

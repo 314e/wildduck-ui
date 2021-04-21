@@ -22,23 +22,17 @@
 		"removeComments": true,
 		"paths": {
 			"app-ui/*": ["src/*"],
-			"app-redux/*": ["submodules/wildduck-redux/src/*"],
 			"components/*": ["src/components/*"],
 			"lib/*": ["src/lib/*"],
 			"ui-utils/*": ["src/utils/*"],
 			"styles/*": ["src/styles/*"],
 			"ui-types/*": ["src/types/*"],
-			"actions/*": ["submodules/wildduck-redux/src/actions/*"],
-			"action-types/*": ["submodules/wildduck-redux/src/actiontypes/*"],
-			"redux-types/*": ["submodules/wildduck-redux/src/types/*"],
-			"redux-utils/*": ["submodules/wildduck-redux/src/utils/*"],
-			"client/*": ["submodules/wildduck-redux/src/client/*"],
-			"redux-constants/*": ["submodules/wildduck-redux/src/constants/*"],
-			"redux-config/*": ["submodules/wildduck-redux/src/config/*"],
-			"logic/*": ["submodules/wildduck-redux/src/logic/*"],
-			"store/*": ["submodules/wildduck-redux/src/store/*"]
+			"redux-types/*": ["src/types/*"],
+			"client/*": ["src/client/*"],
+			"logic/*": ["src/logic/*"],
+			"store/*": ["src/store/*"]
 		}
 	},
-	"include": ["src", "submodules/wildduck-redux/src"],
+	"include": ["src"],
 	"exclude": ["node_modules"]
 }

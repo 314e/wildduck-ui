@@ -13,7 +13,7 @@ import { getForwardedAddressColumns } from './Columns';
 import useDeleteForwadedAddress from 'app-ui/hooks/useDeleteForwardedAddress';
 import useForwadedAddress from 'app-ui/hooks/useForwardedAddress';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 /**
  * ForwardedAddressTable Component

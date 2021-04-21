@@ -14,7 +14,7 @@ import { Pagination } from 'app-ui/utils/Pagination';
 import useUsers from 'app-ui/hooks/useUsers';
 import useDeleteUser from 'app-ui/hooks/useDeleteUser';
 
-import usersLogic from 'app-redux/logic/usersLogic';
+import usersLogic from 'app-ui/logic/usersLogic';
 
 const UsersTable: React.FC = () => {
 	const { setPage, setLimit, setNext, setPrevious } = useActions(usersLogic);

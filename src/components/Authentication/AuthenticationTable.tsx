@@ -13,7 +13,7 @@ import { getAuthenticatonColumns } from './Columns';
 import useAuthentication from 'app-ui/hooks/useAuthentication';
 import { Pagination } from 'app-ui/utils/Pagination';
 
-import authenticationLogic from 'app-redux/logic/authenticationLogic';
+import authenticationLogic from 'app-ui/logic/authenticationLogic';
 
 const AuthenticationTable: React.FC = () => {
 	const { page, limit, previous, next } = useValues(authenticationLogic);

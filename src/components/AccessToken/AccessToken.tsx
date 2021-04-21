@@ -11,7 +11,7 @@ import Page from '../Page';
 import { accessTokenString, apiString } from '../../lib/constants/constant';
 import AxiosInterceptor from 'app-ui/lib/axios/AxiosInterceptors';
 
-import appLogic from 'app-redux/logic/appLogic';
+import appLogic from 'app-ui/logic/appLogic';
 
 /**
  *  access token component

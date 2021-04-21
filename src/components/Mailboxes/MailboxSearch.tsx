@@ -8,7 +8,7 @@ import React from 'react';
 import { Button, Form, Switch } from 'antd';
 import { useActions } from 'kea';
 
-import mailboxesLogic from 'logic/mailboxesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
 
 /**
  * MailboxSearch Component

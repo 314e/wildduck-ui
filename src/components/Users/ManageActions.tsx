@@ -9,7 +9,7 @@ import _ from 'lodash';
 import { useActions } from 'kea';
 
 import { LogoutOutlined } from '@ant-design/icons';
-import { GetUsersResult } from 'app-redux/client/wildduck-api';
+import { GetUsersResult } from 'client/wildduck-api';
 import useRecalculateQuota from 'app-ui/hooks/useRecalculateQuota';
 import RecalculateQuotaIcon from 'app-ui/assets/icons/RecalculateQuotaIcon';
 import showConfirm from 'app-ui/utils/showConfirm';
@@ -19,7 +19,7 @@ import useResetPassword from 'app-ui/hooks/useResetPassword';
 import useLogoutUser from 'app-ui/hooks/useLogoutUser';
 import useUpdateUserDetails from 'app-ui/hooks/useUpdateUserDetails';
 
-import usersLogic from 'app-redux/logic/usersLogic';
+import usersLogic from 'app-ui/logic/usersLogic';
 
 interface ManageActionsProps {
 	user: GetUsersResult;

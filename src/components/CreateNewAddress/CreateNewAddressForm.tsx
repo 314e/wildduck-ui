@@ -13,7 +13,7 @@ import { tailLayout, layout } from '../FormLayout';
 import { SAddress } from '../../lib/constants/constant';
 import { createNewAddressFormatter } from 'app-ui/lib/constants/Formatter';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 import useCreateAddress from 'app-ui/hooks/useCreateAddress';
 
 /**

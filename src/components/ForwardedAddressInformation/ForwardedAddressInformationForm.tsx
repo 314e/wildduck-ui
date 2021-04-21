@@ -15,7 +15,7 @@ import { updateForwardedAddressInfoFormatter } from 'app-ui/lib/constants/Format
 
 import useUpdateForwardedAddress from 'app-ui/hooks/useUpdateForwardedAddress';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 import 'styles/style.css';
 import 'braft-editor/dist/index.css';

@@ -14,7 +14,7 @@ import Link from 'app-ui/components/CustomLink';
 
 import useRenameDomain from 'app-ui/hooks/useRenameDomain';
 
-import addressLogic from 'logic/addressLogic';
+import addressLogic from 'app-ui/logic/addressLogic';
 
 /**
  * RenameDomain Component

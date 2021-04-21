@@ -5,8 +5,8 @@
 
 import { useMutation } from 'react-query';
 
-import api from 'app-redux/client/RequestClient';
-import AppEvents, { Events } from 'app-redux/utils/AppEvents';
+import api from 'client/RequestClient';
+import AppEvents, { Events } from 'app-ui/utils/AppEvents';
 
 /**
  * useResetPassword

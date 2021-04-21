@@ -9,7 +9,7 @@ import { Button, Form, Switch, Input } from 'antd';
 import { useActions, useValues } from 'kea';
 import { useParams } from 'react-router-dom';
 
-import mailboxesLogic from 'logic/mailboxesLogic';
+import mailboxesLogic from 'app-ui/logic/mailboxesLogic';
 import { layout, tailLayout } from '../FormLayout';
 import useUpdateMailbox from 'app-ui/hooks/useUpdateMailbox';
 

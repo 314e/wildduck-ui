@@ -16,9 +16,9 @@ import Modal from 'antd/lib/modal';
 import { tailLayout } from '../FormLayout';
 import { Page } from '../Page/Page';
 
-import filtersLogic from 'app-redux/logic/filtersLogic';
+import filtersLogic from 'app-ui/logic/filtersLogic';
 import { filtersTooltip } from 'app-ui/lib/constants/constant';
-import { CreateFilterRequest } from 'app-redux/client/wildduck-api';
+import { CreateFilterRequest } from 'client/wildduck-api';
 
 import useFilterDetails from 'app-ui/hooks/useFIlterDetails';
 import useCreateFilter from 'app-ui/hooks/useCreateFilter';

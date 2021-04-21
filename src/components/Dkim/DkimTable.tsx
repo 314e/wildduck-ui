@@ -14,7 +14,7 @@ import { Pagination } from 'app-ui/utils/Pagination';
 import useDeleteDkim from 'app-ui/hooks/useDeleteDkim';
 import useDkim from 'app-ui/hooks/useDkim';
 
-import dkimLogic from 'logic/dkimLogic';
+import dkimLogic from 'app-ui/logic/dkimLogic';
 
 const DkimTable: React.FC = () => {
 	const { query, page, limit, next, previous } = useValues(dkimLogic);

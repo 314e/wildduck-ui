@@ -8,13 +8,13 @@ import { Space, Tooltip, Button } from 'antd';
 import { useActions } from 'kea';
 import { useParams } from 'react-router-dom';
 
-import { GetMessagesResult } from 'app-redux/client/wildduck-api';
+import { GetMessagesResult } from 'client/wildduck-api';
 import { MailOutlined, DeleteFilled } from '@ant-design/icons';
 import showConfirm from 'app-ui/utils/showConfirm';
 
 import useDeleteMessage from 'app-ui/hooks/useDeleteMessage';
 
-import messagesLogic from 'app-redux/logic/messagesLogic';
+import messagesLogic from 'app-ui/logic/messagesLogic';
 
 const MessageActions: React.FC<{ messageDetails: GetMessagesResult }> = ({
 	messageDetails,

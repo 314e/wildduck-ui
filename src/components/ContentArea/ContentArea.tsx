@@ -10,8 +10,8 @@ import { useActions, useValues } from 'kea';
 import LoadingPage from '../LoadingPage';
 import { Layout } from 'antd';
 
-import appLogic from 'app-redux/logic/appLogic';
-import navigationLogic from 'app-redux/logic/navigationLogic';
+import appLogic from 'app-ui/logic/appLogic';
+import navigationLogic from 'app-ui/logic/navigationLogic';
 
 const ContentArea = () => {
 	const { menuConfig, basePath } = useValues(appLogic);
