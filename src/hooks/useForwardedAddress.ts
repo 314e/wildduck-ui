@@ -17,6 +17,7 @@ const useForwadedAddress = (params?: Address.IParams) => {
 		let addressList: any = [];
 		let response = await api.addressApi.getAddresses(
 			_.get(params, 'query', ' '),
+			'',
 			_.get(params, 'tags', ' '),
 			_.get(params, 'requiredTags', ' '),
 			_.get(params, 'metaData', false),
@@ -32,6 +33,7 @@ const useForwadedAddress = (params?: Address.IParams) => {
 		while (!_.isEmpty(_.get(response, 'nextCursor'))) {
 			response = await api.addressApi.getAddresses(
 				_.get(params, 'query', ' '),
+				'',
 				_.get(params, 'tags', ' '),
 				_.get(params, 'requiredTags', ' '),
 				_.get(params, 'metaData', false),

@@ -18,6 +18,7 @@ const useUsers = (params?: IUsers.IFilterUsers) => {
 		async () => {
 			const { data } = await api.usersApi.getUsers(
 				params?.query,
+				'',
 				params?.tags,
 				params?.requiredTags,
 				params?.metaData,
