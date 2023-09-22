@@ -24,8 +24,8 @@ const useForwadedAddress = (params?: Address.IParams) => {
 			_.get(params, 'internalData', false),
 			_.get(params, 'limit', 250),
 			_.get(params, 'page', 1),
-			_.get(params, 'next'),
-			_.get(params, 'previous'),
+			_.toString(_.get(params, 'next')),
+			_.toString(_.get(params, 'previous')),
 		);
 
 		addressList = _.get(response, 'data.results', []);
@@ -40,8 +40,8 @@ const useForwadedAddress = (params?: Address.IParams) => {
 				_.get(params, 'internalData', false),
 				_.get(params, 'limit', 250),
 				_.get(params, 'page', 1),
-				_.get(params, 'next'),
-				_.get(params, 'previous'),
+				_.toString(_.get(params, 'next')),
+				_.toString(_.get(params, 'previous')),
 			);
 
 			_.concat(addressList, _.get(response, 'data.results', []));
