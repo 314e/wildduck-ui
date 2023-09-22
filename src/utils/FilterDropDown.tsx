@@ -5,7 +5,7 @@
 
 import React from 'react';
 import _ from 'lodash';
-import { Input, Button, List, Checkbox } from 'antd';
+import { Input, Button, List, Checkbox, InputRef } from 'antd';
 import { FilterDropdownProps } from 'antd/lib/table/interface';
 
 import './FilterDropdownStyle.css';
@@ -33,7 +33,7 @@ const getFilteredKeys = (selectedKeys: string[], filterUpOn: string): string[] =
 const getFilterDropDown = (filters: string[], dataIndex: string, columnName: string, defaultFilters: string[] = []) => {
 	// dupFilters is useful to filter values based on the search input
 	let dupFilters = filters;
-	const inputRef = React.createRef<Input>();
+	const inputRef = React.createRef<InputRef>();
 	let isSelected = false;
 
 	if (_.isEmpty(defaultFilters) || (!_.isEmpty(defaultFilters) && defaultFilters.length === filters.length)) {
@@ -111,9 +111,9 @@ const getFilterDropDown = (filters: string[], dataIndex: string, columnName: str
 				 * @param e - need to reset the input field if any value exist in it
 				 */
 				const handleResetButtonClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-					if (inputRef.current !== null) {
-						inputRef.current.handleReset(e);
-					}
+					// if (inputRef.current !== null) {
+					// 	inputRef.current.handleReset(e);
+					// }
 					isSelected = true;
 
 					clearFilters();
@@ -126,9 +126,9 @@ const getFilterDropDown = (filters: string[], dataIndex: string, columnName: str
 				 * @param e - need to reset the input field if any value exist in it
 				 */
 				const handleOkButtonClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-					if (inputRef.current !== null) {
-						inputRef.current.handleReset(e);
-					}
+					// if (inputRef.current !== null) {
+					// 	inputRef.current.handleReset(e);
+					// }
 					if (_.isEmpty(selectedKeyCopy)) {
 						setSelectedKeys(['this-is-to-show-empty-table']);
 					}

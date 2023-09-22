@@ -20,7 +20,7 @@
 git clone https://github.com/softwareartistry/wildduck-ui.git
 
 cd wildduck-ui
-npm install
+npm install --legacy-peer-deps
 npm run dev
 
 ```

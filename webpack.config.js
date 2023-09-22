@@ -51,11 +51,7 @@ module.exports = (props) => {
 					{
 						test: /\.(ts|tsx)$/,
 						include: getIncludeDirs(),
-						use: [
-							{
-								loader: 'awesome-typescript-loader',
-							},
-						],
+						loader: 'ts-loader',
 					},
 				],
 			},

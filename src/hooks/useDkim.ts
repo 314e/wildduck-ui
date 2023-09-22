@@ -23,7 +23,7 @@ interface DkimProps {
 
 const useDkim = ({ query = '', limit, page, next, previous }: DkimProps) => {
 	return useQuery(['query-dkim', query, page, limit], async () => {
-		const { data } = await api.dkimApi.getDkimKeys(query, limit, page, next, previous);
+		const { data } = await api.dkimApi.getDkimKeys(query, limit, page, _.toString(next), _.toString(previous));
 		return {
 			previousCursor: _.get(data, 'previousCursor'),
 			nextCursor: _.get(data, 'nextCursor'),

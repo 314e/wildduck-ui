@@ -25,8 +25,8 @@ const useUsers = (params?: IUsers.IFilterUsers) => {
 				params?.internalData,
 				params?.limit,
 				params?.page,
-				params?.next,
-				params?.previous,
+				_.toString(params?.next),
+				_.toString(params?.previous),
 			);
 			return {
 				data: addKey(_.sortBy(_.get(data, 'results', []), (user: any) => user.username)),

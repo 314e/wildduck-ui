@@ -4,8 +4,6 @@ import { Icon } from '@ant-design/compatible';
 import { Link, withRouter, RouteComponentProps } from 'react-router-dom';
 import _ from 'lodash';
 
-import { OpenEventHandler } from 'rc-menu/lib/interface';
-
 /**
  * Navigation Bar
  * @class @name NavigationBar
@@ -81,27 +79,24 @@ class NavigationBar extends React.PureComponent<Navigation.Props & RouteComponen
 	 * @member
 	 */
 	renderSubMenuItem = (subMenuItem: Navigation.IMenuItems): JSX.Element[] => {
-		return _.map(
-			subMenuItem,
-			(menuItem: Navigation.ISubMenuItem | Navigation.IMenuItem): JSX.Element => {
-				if ('children' in menuItem) {
-					const title = (
-						<span>
-							<Icon style={{ fontSize: 16 }} {...menuItem.icon} />
-							<span>{menuItem.title}</span>
-						</span>
-					);
-					const children = _.map(menuItem.children, this.renderMenuItem);
-					return (
-						<Menu.SubMenu key={menuItem.title} title={title} style={{ fontSize: 12 }}>
-							{children}
-						</Menu.SubMenu>
-					);
-				} else {
-					return this.renderMenuItem(menuItem);
-				}
-			},
-		);
+		return _.map(subMenuItem, (menuItem: Navigation.ISubMenuItem | Navigation.IMenuItem): JSX.Element => {
+			if ('children' in menuItem) {
+				const title = (
+					<span>
+						<Icon style={{ fontSize: 16 }} {...menuItem.icon} />
+						<span>{menuItem.title}</span>
+					</span>
+				);
+				const children = _.map(menuItem.children, this.renderMenuItem);
+				return (
+					<Menu.SubMenu key={menuItem.title} title={title} style={{ fontSize: 12 }}>
+						{children}
+					</Menu.SubMenu>
+				);
+			} else {
+				return this.renderMenuItem(menuItem);
+			}
+		});
 	};
 
 	/**
@@ -137,7 +132,7 @@ class NavigationBar extends React.PureComponent<Navigation.Props & RouteComponen
 					mode='inline'
 					selectedKeys={selectedKeys}
 					openKeys={openKeys}
-					onOpenChange={this.handleOpenKeysChange as OpenEventHandler}
+					onOpenChange={this.handleOpenKeysChange}
 					onSelect={this.updateSelectedKeys}
 				>
 					{menuItems}
