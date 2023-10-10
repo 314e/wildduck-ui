@@ -33,9 +33,9 @@ const UserDetailsForm: React.FC<any> = (props: any) => {
 						});
 					} else if (
 						index === 'quota' ||
-						index === 'imapDownload' ||
+						index === 'imapMaxDownload' ||
 						index === 'pop3Download' ||
-						index === 'imapUpload'
+						index === 'imapMaxUpload'
 					) {
 						_.set(acc, `${index}`, value * 1024000);
 					} else {
